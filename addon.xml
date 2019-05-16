@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.resolveurl-tester" name="ResolveURL Tester" version="1.0.0" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.tulip" version="2.3.6"/>
+        <import addon="script.module.resolveurl" version="5.0.29"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en">ResolveURL Tester</summary>
+        <description lang="en_GB">This addon can play and test various video and audio content from various sources supported by ResolveURL library.</description>
+        <disclaimer lang="en_GB">This addon does not provide any content, its sole purpose is to resolve web urls with the help of ResolveURL library</disclaimer>
+        <language>en</language>
+        <license>GNU GPL, version 2</license>
+        <website>https://twitter.com/TwilightZer0</website>
+        <source>https://github.com/Twilight0/plugin.video.resolveurl-tester</source>
+        <size>106257</size>
+        <news>[B]1.0.0[/B] - 16-05-2019
+- Initial version</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
