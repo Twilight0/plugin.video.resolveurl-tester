@@ -30,7 +30,9 @@ if action is None:
 
 elif action == 'play':
     from resources.lib.modules import player
-    player.play(url)
+    if query:
+        query = {'title': query}
+    player.play(url, query)
 
 elif action == 'add':
     from resources.lib.modules import tools
@@ -53,5 +55,5 @@ elif action == 'delete_from_history':
     tools.delete_from_history(query)
 
 elif action == 'resolveurl_settings':
-    from resources.lib.modules import tools
-    tools.resolveurl_settings()
+    from resolveurl import display_settings
+    display_settings()

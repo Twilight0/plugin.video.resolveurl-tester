@@ -119,10 +119,3 @@ def readme():
 def refresh():
 
     control.refresh()
-
-
-def resolveurl_settings():
-
-    from resolveurl import display_settings
-
-    display_settings()

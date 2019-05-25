@@ -40,8 +40,22 @@ def router(url):
         return url
 
 
-def play(url):
+def play(url, meta=None):
+
+    if meta:
+
+        control.busy()
 
     stream = router(url)
 
-    directory.resolve(stream)
+    if isinstance(meta, dict):
+
+        control.idle()
+
+        if meta['title'] == 'custom':
+
+            title = control.inputDialog()
+
+            meta['title'] = title
+
+    directory.resolve(stream, meta=meta, resolved_mode=meta is None)

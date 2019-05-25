@@ -4,6 +4,6 @@
         <setting id="history.size" type="slider" label="30007" default="10" range="5,1,50" option="int"/>
         <setting label="30008" type="action" action="RunPlugin(plugin://$ID/?action=readme)"/>
         <setting label="30010" type="action" action="RunPlugin(plugin://$ID/?action=clear_history)"/>
-        <setting label="30002" type="action" action="RunPlugin(plugin://$ID/?action=resolveurl_settings)"/>
+        <setting label="30002" type="action" action="RunPlugin(plugin://$ID/?action=resolveurl_settings)" option="close"/>
     </category>
 </settings>
