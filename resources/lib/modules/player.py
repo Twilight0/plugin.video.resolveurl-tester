@@ -16,7 +16,7 @@
 '''
 
 from tulip import directory, control
-from resolveurl import HostedMediaFile, resolve, add_plugin_dirs
+from resolveurl import HostedMediaFile, resolve, add_plugin_dirs, relevant_resolvers
 
 
 def router(url):
@@ -25,7 +25,19 @@ def router(url):
 
         add_plugin_dirs([control.join(control.addonPath, 'resources', 'lib', 'resolvers')])
 
-        if HostedMediaFile(url).valid_url():
+        forced_host = control.setting('force_host')
+
+        rr = relevant_resolvers()
+        domains = [r.domains for r in rr][1:]
+        domain_list = [d for dm in domains for d in dm]
+
+        if forced_host in domain_list:
+
+            stream = HostedMediaFile(media_id=url, host=forced_host).resolve()
+
+            return stream
+
+        elif HostedMediaFile(url).valid_url():
 
             stream = resolve(url)
 
@@ -33,7 +45,7 @@ def router(url):
 
         else:
 
-            raise Exception
+            return url
 
     except Exception:
 

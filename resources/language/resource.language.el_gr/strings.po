@@ -59,8 +59,8 @@ msgid "Done"
 msgstr "Εξετελέσθει"
 
 msgctxt "#30012"
-msgid ""
-msgstr ""
+msgid "Force specific host"
+msgstr "Επιβολή συγκεκριμένου ιστοτόπου"
 
 msgctxt "#30013"
 msgid "Delete this url"

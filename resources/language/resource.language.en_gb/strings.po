@@ -59,7 +59,7 @@ msgid "Done"
 msgstr ""
 
 msgctxt "#30012"
-msgid ""
+msgid "Force specific host"
 msgstr ""
 
 msgctxt "#30013"
