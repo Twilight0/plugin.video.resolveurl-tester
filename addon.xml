@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.resolveurl-tester" name="ResolveURL Tester" version="1.1.0" provider-name="Twilight0">
+<addon id="plugin.video.resolveurl-tester" name="ResolveURL Tester" version="1.1.1" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.tulip" version="2.3.6"/>
-        <import addon="script.module.resolveurl" version="5.0.31"/>
+        <import addon="script.module.tulip" version="2.3.13"/>
+        <import addon="script.module.resolveurl" version="5.0.35"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -18,8 +18,13 @@
         <license>GNU GPL, version 2</license>
         <website>https://twitter.com/TwilightZer0</website>
         <source>https://github.com/Twilight0/plugin.video.resolveurl-tester</source>
-        <size>106257</size>
-        <news>[B]1.1.0[/B] - 29-05-2019
+        <size>111206</size>
+        <news>[B]1.1.1[/B] - 11-11-2019
+- Minor tweaks here and there
+- Enhanced context menu items
+- Add sleep when adding a link to wait for directory refresh
+
+[B]1.1.0[/B] - 29-05-2019
 - Added a setting to force a specific host (useful for testing universal resolvers)
   > As url you must provide media id only
 

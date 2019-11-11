@@ -17,6 +17,7 @@
 
 from tulip import directory, control
 from resolveurl import HostedMediaFile, resolve, add_plugin_dirs, relevant_resolvers
+from resolveurl.resolver import ResolverError
 
 
 def router(url):
@@ -47,7 +48,7 @@ def router(url):
 
             return url
 
-    except Exception:
+    except ResolverError:
 
         return url
 
