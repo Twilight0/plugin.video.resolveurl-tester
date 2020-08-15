@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.resolveurl-tester" name="ResolveURL Tester" version="1.1.1" provider-name="Twilight0">
+<addon id="plugin.video.resolveurl-tester" name="ResolveURL Tester" version="1.1.2" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.tulip" version="2.3.13"/>
-        <import addon="script.module.resolveurl" version="5.0.35"/>
+        <import addon="script.module.tulip" version="2.6.11"/>
+        <import addon="script.module.resolveurl" version="5.1.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -11,15 +11,22 @@
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
-        <summary lang="en">ResolveURL Tester</summary>
+        <summary lang="en_GB">ResolveURL Tester</summary>
         <description lang="en_GB">This addon can play and test various video and audio content from various sources supported by ResolveURL library.</description>
-        <disclaimer lang="en_GB">This addon does not provide any content, its sole purpose is to resolve web urls with the help of ResolveURL library</disclaimer>
+        <disclaimer lang="en_GB">This addon does not provide any content, its sole purpose is to resolve web urls into playable content with the help of ResolveURL library</disclaimer>
+        <summary lang="el_GR">Δοκιμαστής ResolveURL</summary>
+        <description lang="el_GR">Το πρόσθετο αυτό μπορεί να αναπαράξει και να δοκιμάσει περιεχόμενο βίντεο και ήχου από διάφορες πηγές που υποστηρίζονται από την βιβλιοθήκη ResolveURL.</description>
+        <disclaimer lang="el_GR">Το πρόσθετο αυτό δεν παρέχει περιεχόμενο, ο μοναδικός σκοπός είναι να επιλύει ιστοσελίδες σε αναπαράξιμο περιεχόμενο με την βοήθεια του ResolveURL.</disclaimer>
         <language>en</language>
-        <license>GNU GPL, version 2</license>
+        <license>GPL-3.0-only</license>
         <website>https://twitter.com/TwilightZer0</website>
         <source>https://github.com/Twilight0/plugin.video.resolveurl-tester</source>
         <size>111206</size>
-        <news>[B]1.1.1[/B] - 11-11-2019
+        <news>[B]1.1.2[/B] - 15-08-2020
+- Tweaked addon.xml
+- Bumped dependencies
+
+[B]1.1.1[/B] - 11-11-2019
 - Minor tweaks here and there
 - Enhanced context menu items
 - Add sleep when adding a link to wait for directory refresh

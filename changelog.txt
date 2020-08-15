@@ -1,3 +1,7 @@
+[B]1.1.2[/B] - 15-08-2020
+- Tweaked addon.xml
+- Bumped dependencies
+
 [B]1.1.0[/B] - 11-11-2019
 - Minor tweaks here and there
 - Added 200ms sleep when doing file related operations (needed for slower devices)
